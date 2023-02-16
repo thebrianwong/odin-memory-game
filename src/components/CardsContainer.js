@@ -1,6 +1,6 @@
 import CharacterCard from "./CharacterCard";
 
-const CardsContainer = ({ element, characterData }) => {
+const CardsContainer = ({ element, characterData, resolveCardChoice }) => {
   // some function to scramble the order of cards
   return (
     <div>
@@ -11,6 +11,7 @@ const CardsContainer = ({ element, characterData }) => {
             characterName={character.name}
             characterElement={element}
             characterImage={character.image}
+            resolveCardChoice={resolveCardChoice}
           />
         );
       })}

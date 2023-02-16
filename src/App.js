@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ElementDropdownMenu from "./components/ElementDropdownMenu";
 import ScoresDisplay from "./components/ScoresDisplay";
 import CardsContainer from "./components/CardsContainer";
@@ -17,6 +17,30 @@ function App() {
   });
   const [currentElement, setCurrentElement] = useState("pyro");
   const [previouslyPicked, setPreviouslyPicked] = useState([]);
+  const gainPoint = () => {
+    setCurrentScore(currentScore + 1);
+  };
+  const resetPoints = () => {
+    setCurrentScore(0);
+  };
+  const checkForNewBestScore = (element) => {
+    if (currentScore > bestScores[element]) {
+      setBestScores({ ...bestScores, [element]: currentScore });
+    }
+  };
+  const resolveCardChoice = (characterName, element) => {
+    if (!previouslyPicked.includes(characterName)) {
+      gainPoint();
+      setPreviouslyPicked(previouslyPicked.concat(characterName));
+    } else {
+      setCurrentScore(1);
+      setPreviouslyPicked([characterName]);
+    }
+    // some function that will accept a callback, which will be cards container's scramble function
+  };
+  useEffect(() => {
+    checkForNewBestScore(currentElement);
+  }, [currentScore]);
   return (
     <>
       <h1>Genshin Impact Memory Game</h1>
@@ -30,6 +54,7 @@ function App() {
       <CardsContainer
         element={currentElement}
         characterData={characterData[currentElement]}
+        resolveCardChoice={resolveCardChoice}
       />
       <p>All assets by HoYoverse</p>
     </>
