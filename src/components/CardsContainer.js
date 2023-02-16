@@ -1,3 +1,5 @@
+import CharacterCard from "./CharacterCard";
+
 const CardsContainer = ({ element, characterData }) => {
   // some function to scramble the order of cards
   return (
