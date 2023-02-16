@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ScoresDisplay from "./components/ScoresDisplay";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
@@ -16,7 +17,11 @@ function App() {
     <>
       <h1>Genshin Impact Memory Game</h1>
       <p>Test your memory!</p>
-      <p>ScoresDisplay</p>
+      <ScoresDisplay
+        currentScore={currentScore}
+        bestScore={bestScores[currentElement]}
+        element={currentElement}
+      />
       <p>ElementDropdownMenu</p>
       <p>CardsContainer</p>
       <p>All assets by HoYoverse</p>
