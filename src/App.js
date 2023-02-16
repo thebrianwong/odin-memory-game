@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ElementDropdownMenu from "./components/ElementDropdownMenu";
 import ScoresDisplay from "./components/ScoresDisplay";
+import { characterData } from "./characterData";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
