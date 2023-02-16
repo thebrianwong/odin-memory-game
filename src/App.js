@@ -16,6 +16,7 @@ function App() {
     geo: 0,
   });
   const [currentElement, setCurrentElement] = useState("pyro");
+  const [previouslyPicked, setPreviouslyPicked] = useState([]);
   return (
     <>
       <h1>Genshin Impact Memory Game</h1>
