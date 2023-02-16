@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-
-const ScoresDisplay = ({ bestScore }) => {
-  const [currentScore, setCurrentScore] = useState(0);
-  useEffect(() => {
-    // if currentScore > bestScore, callback from App.js to set bestScore to currentScore
-  }, [currentScore]);
+const ScoresDisplay = ({ currentScore, bestScore, element }) => {
+  <>
+    <p>{`Best ${
+      element[0].upperCase() + element.slice(1)
+    } Score: ${bestScore}`}</p>
+    <p>{`Current Score: ${currentScore}`}</p>
+  </>;
 };
 
 export default ScoresDisplay;

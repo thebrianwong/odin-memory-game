@@ -11,6 +11,7 @@ function App() {
     cryo: 0,
     geo: 0,
   });
+  const [currentElement, setCurrentElement] = useState("pyro");
   return (
     <>
       <h1>Genshin Impact Memory Game</h1>
