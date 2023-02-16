@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ElementDropdownMenu from "./components/ElementDropdownMenu";
 import ScoresDisplay from "./components/ScoresDisplay";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         bestScore={bestScores[currentElement]}
         element={currentElement}
       />
-      <p>ElementDropdownMenu</p>
+      <ElementDropdownMenu changeElement={setCurrentElement} />
       <p>CardsContainer</p>
       <p>All assets by HoYoverse</p>
     </>
