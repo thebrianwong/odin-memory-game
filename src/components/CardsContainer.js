@@ -4,7 +4,7 @@ const CardsContainer = ({ element, characterData }) => {
   // some function to scramble the order of cards
   return (
     <div>
-      {characterData.maps((character) => {
+      {characterData.map((character) => {
         <CharacterCard
           characterName={character.name}
           characterElement={element}
