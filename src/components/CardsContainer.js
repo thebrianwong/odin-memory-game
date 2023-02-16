@@ -5,11 +5,14 @@ const CardsContainer = ({ element, characterData }) => {
   return (
     <div>
       {characterData.map((character) => {
-        <CharacterCard
-          characterName={character.name}
-          characterElement={element}
-          characterImage={character.image}
-        />;
+        return (
+          <CharacterCard
+            key={character.name}
+            characterName={character.name}
+            characterElement={element}
+            characterImage={character.image}
+          />
+        );
       })}
     </div>
   );

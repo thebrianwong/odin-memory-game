@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ElementDropdownMenu from "./components/ElementDropdownMenu";
 import ScoresDisplay from "./components/ScoresDisplay";
+import CardsContainer from "./components/CardsContainer";
 import { characterData } from "./characterData";
 
 function App() {
@@ -25,7 +26,10 @@ function App() {
         element={currentElement}
       />
       <ElementDropdownMenu changeElement={setCurrentElement} />
-      <p>CardsContainer</p>
+      <CardsContainer
+        element={currentElement}
+        characterData={characterData[currentElement]}
+      />
       <p>All assets by HoYoverse</p>
     </>
   );
