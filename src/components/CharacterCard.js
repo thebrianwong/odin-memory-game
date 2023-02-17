@@ -5,10 +5,10 @@ const CharacterCard = ({
   resolveCardChoice,
 }) => {
   return (
-    <div onClick={() => resolveCardChoice(characterName, characterElement)}>
+    <button onClick={() => resolveCardChoice(characterName, characterElement)}>
       <img src={`${characterImage}`} alt={`${characterName} chibi sticker`} />
       <p>{characterName}</p>
-    </div>
+    </button>
   );
 };
 
