@@ -23,6 +23,9 @@ function App() {
   const resetPoints = () => {
     setCurrentScore(0);
   };
+  const resetPickedCharacters = () => {
+    setPreviouslyPicked([]);
+  };
   const checkForNewBestScore = (element) => {
     if (currentScore > bestScores[element]) {
       setBestScores({ ...bestScores, [element]: currentScore });
@@ -41,6 +44,10 @@ function App() {
   useEffect(() => {
     checkForNewBestScore(currentElement);
   }, [currentScore]);
+  useEffect(() => {
+    resetPoints();
+    resetPickedCharacters();
+  }, [currentElement]);
   return (
     <>
       <h1>Genshin Impact Memory Game</h1>
