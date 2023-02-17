@@ -15,6 +15,16 @@ export const characterData = {
       image:
         "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Icon_Emoji_Paimon%27s_Paintings_Diluc_1.png/",
     },
+    {
+      name: "Hu Tao",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/3/36/Icon_Emoji_065_Hu_Tao_Evil_laugh.png/",
+    },
+    {
+      name: "Klee",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Icon_Emoji_GAA_10.png",
+    },
   ],
   electro: [
     {
