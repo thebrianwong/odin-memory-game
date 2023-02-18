@@ -86,7 +86,7 @@ function App() {
     }
     // some function that will accept a callback, which will be cards container's scramble function
   };
-  useEffect(() => {
+  useMemo(() => {
     // console.log(scores.bestScores);
     checkForNewBestScore(currentElement);
     // console.log(scores.bestScores);
