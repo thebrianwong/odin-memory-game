@@ -36,8 +36,8 @@ function App() {
       gainPoint();
       setPreviouslyPicked(previouslyPicked.concat(characterName));
     } else {
-      setCurrentScore(1);
-      setPreviouslyPicked([characterName]);
+      resetPoints();
+      resetPickedCharacters();
     }
   };
   useMemo(() => {
