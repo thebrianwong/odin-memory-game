@@ -3,6 +3,7 @@ import ElementDropdownMenu from "./components/ElementDropdownMenu";
 import ScoresDisplay from "./components/ScoresDisplay";
 import CardsContainer from "./components/CardsContainer";
 import { characterData } from "./characterData";
+import "./styles/styles.css";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
