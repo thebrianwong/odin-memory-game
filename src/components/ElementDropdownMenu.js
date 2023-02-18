@@ -1,4 +1,8 @@
-const ElementDropdownMenu = ({ changeElement }) => {
+import { memo } from "react";
+
+const ElementDropdownMenu = memo(function ElementDropdownMenu({
+  changeElement,
+}) {
   return (
     <div>
       <ul>
@@ -27,6 +31,6 @@ const ElementDropdownMenu = ({ changeElement }) => {
       </ul>
     </div>
   );
-};
+});
 
 export default ElementDropdownMenu;
