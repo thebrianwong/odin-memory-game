@@ -70,7 +70,9 @@ function App() {
         characterData={characterData[currentElement]}
         resolveCardChoice={resolveCardChoice}
       />
-      <p>All assets by HoYoverse</p>
+      <div className="credits">
+        <p>All assets by HoYoverse</p>
+      </div>
     </>
   );
 }
