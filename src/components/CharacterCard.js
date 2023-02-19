@@ -10,7 +10,9 @@ const CharacterCard = ({
       onClick={() => resolveCardChoice(characterName, characterElement)}
     >
       <img src={`${characterImage}`} alt={`${characterName} chibi sticker`} />
-      <p>{characterName}</p>
+      <p className={`${characterElement}-text elemental-text`}>
+        {characterName}
+      </p>
     </button>
   );
 };
