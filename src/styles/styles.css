@@ -146,7 +146,6 @@ button:hover {
 
 .placeholder-button {
   color: black;
-  display: block !important;
 }
 
 .placeholder-button:hover {
