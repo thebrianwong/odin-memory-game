@@ -6,7 +6,7 @@ const CharacterCard = ({
 }) => {
   return (
     <button
-      className="game-card"
+      className={`${characterElement}-card game-card`}
       onClick={() => resolveCardChoice(characterName, characterElement)}
     >
       <img src={`${characterImage}`} alt={`${characterName} chibi sticker`} />
