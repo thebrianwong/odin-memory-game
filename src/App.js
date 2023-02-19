@@ -50,14 +50,18 @@ function App() {
   }, [currentElement]);
   return (
     <>
-      <h1>Genshin Impact Memory Game</h1>
-      <p>Test your memory!</p>
-      <ScoresDisplay
-        currentScore={currentScore}
-        bestScore={bestScores[currentElement]}
-        element={currentElement}
-      />
-      <ElementDropdownMenu changeElement={setCurrentElement} />
+      <div class="game-ui">
+        <div class="title-text">
+          <h1>Genshin Impact Memory Game</h1>
+          <p>Test your memory!</p>
+        </div>
+        <ScoresDisplay
+          currentScore={currentScore}
+          bestScore={bestScores[currentElement]}
+          element={currentElement}
+        />
+        <ElementDropdownMenu changeElement={setCurrentElement} />
+      </div>
       <CardsContainer
         element={currentElement}
         characterData={characterData[currentElement]}
