@@ -25,6 +25,31 @@ export const characterData = {
       image:
         "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Icon_Emoji_GAA_10.png",
     },
+    {
+      name: "Thoma",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/0/09/Icon_Emoji_Thoma_6.png/",
+    },
+    {
+      name: "Xiangling",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Icon_Emoji_Paimon%27s_Paintings_Xiangling_2.png/",
+    },
+    {
+      name: "Xinyan",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/1/16/Icon_Emoji_043_Xinyan_I%27m_heating_up%21.png/",
+    },
+    {
+      name: "Yanfei",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/d/db/Icon_Emoji_Paimon%27s_Paintings_15_Yanfei_3.png/",
+    },
+    {
+      name: "Yoimiya",
+      image:
+        "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Icon_Emoji_Paimon%27s_Paintings_Yoimiya_3.png/",
+    },
   ],
   electro: [
     {
