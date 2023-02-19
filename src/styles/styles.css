@@ -1,3 +1,13 @@
+:root {
+  --pyro: #ef7939;
+  --hydro: #4cc2f0;
+  --anemo: #74c2a8;
+  --electro: #af8fc1;
+  --dendro: #a5c83a;
+  --cryo: #a0d5e7;
+  --geo: #fab631;
+}
+
 body {
   background-image: url(../assets/loading_screen.jpg);
   background-size: cover;
@@ -81,4 +91,31 @@ ul {
 .credits {
   text-align: center;
   margin: 0 0 2.5vh 0;
+}
+
+.elemental-text {
+  text-shadow: 0 1px black;
+}
+
+.pyro-text {
+  color: var(--pyro);
+}
+
+.hydro-text {
+  color: var(--hydro);
+}
+.anemo-text {
+  color: var(--anemo);
+}
+.electro-text {
+  color: var(--electro);
+}
+.dendro-text {
+  color: var(--dendro);
+}
+.cryo-text {
+  color: var(--cryo);
+}
+.geo-text {
+  color: var(--geo);
 }
