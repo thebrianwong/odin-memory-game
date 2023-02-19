@@ -93,6 +93,15 @@ button:hover {
   padding: 10px 15px;
 }
 
+.game-card {
+  border-radius: 8px;
+}
+
+.game-card:hover {
+  background-color: lightgray;
+  transform: scale(1.01);
+}
+
 .game-card img {
   margin-top: 15px;
 }
@@ -178,4 +187,32 @@ button:hover {
 
 .geo-background {
   background-color: var(--geo);
+}
+
+.pyro-card {
+  border: solid 2px var(--pyro);
+}
+
+.hydro-card {
+  border: solid 2px var(--hydro);
+}
+
+.anemo-card {
+  border: solid 2px var(--anemo);
+}
+
+.electro-card {
+  border: solid 2px var(--electro);
+}
+
+.dendro-card {
+  border: solid 2px var(--dendro);
+}
+
+.cryo-card {
+  border: solid 2px var(--cryo);
+}
+
+.geo-card {
+  border: solid 2px var(--geo);
 }
