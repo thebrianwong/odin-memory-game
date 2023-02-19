@@ -5,7 +5,10 @@ const CharacterCard = ({
   resolveCardChoice,
 }) => {
   return (
-    <button onClick={() => resolveCardChoice(characterName, characterElement)}>
+    <button
+      className="game-card"
+      onClick={() => resolveCardChoice(characterName, characterElement)}
+    >
       <img src={`${characterImage}`} alt={`${characterName} chibi sticker`} />
       <p>{characterName}</p>
     </button>
