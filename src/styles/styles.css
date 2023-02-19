@@ -21,6 +21,10 @@ ul {
   padding: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -69,6 +73,7 @@ ul {
 .element-dropdown {
   display: none;
   position: absolute;
+  box-shadow: 2px 4px 6px 0px black;
   width: 100%;
 }
 
@@ -94,6 +99,7 @@ ul {
 }
 
 .elemental-text {
+  font-weight: 600;
   text-shadow: 0 1px black;
 }
 
@@ -104,18 +110,70 @@ ul {
 .hydro-text {
   color: var(--hydro);
 }
+
 .anemo-text {
   color: var(--anemo);
 }
+
 .electro-text {
   color: var(--electro);
 }
+
 .dendro-text {
   color: var(--dendro);
 }
+
 .cryo-text {
   color: var(--cryo);
 }
+
 .geo-text {
   color: var(--geo);
+}
+
+.elemental-button {
+  color: white;
+  border: solid 1px black;
+  font-weight: 600;
+}
+
+.elemental-button:hover {
+  box-shadow: 0px 0px 5px 0px black inset;
+}
+
+.placeholder-button {
+  color: black;
+  display: block !important;
+}
+
+.placeholder-button:hover {
+  cursor: default;
+}
+
+.pyro-background {
+  background-color: var(--pyro);
+}
+
+.hydro-background {
+  background-color: var(--hydro);
+}
+
+.anemo-background {
+  background-color: var(--anemo);
+}
+
+.electro-background {
+  background-color: var(--electro);
+}
+
+.dendro-background {
+  background-color: var(--dendro);
+}
+
+.cryo-background {
+  background-color: var(--cryo);
+}
+
+.geo-background {
+  background-color: var(--geo);
 }
