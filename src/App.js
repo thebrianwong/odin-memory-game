@@ -53,7 +53,9 @@ function App() {
     <>
       <div class="game-ui">
         <div class="title-text">
-          <h1>Genshin Impact Memory Game</h1>
+          <h1>
+            Genshin Impact<br></br> Memory Game
+          </h1>
           <p>Test your memory!</p>
         </div>
         <ScoresDisplay
