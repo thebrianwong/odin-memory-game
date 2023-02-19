@@ -4,3 +4,34 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.game-ui {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.element-menu {
+  background-color: transparent;
+  position: relative;
+  width: 150px;
+}
+
+.element-menu button {
+  width: 100%;
+}
+
+.element-dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.element-menu:hover .element-dropdown {
+  display: block;
+}
