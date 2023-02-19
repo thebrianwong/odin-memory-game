@@ -191,28 +191,35 @@ button:hover {
 
 .pyro-card {
   border: solid 2px var(--pyro);
+  box-shadow: 0 0 4px var(--pyro);
 }
 
 .hydro-card {
   border: solid 2px var(--hydro);
+  box-shadow: 0 0 4px var(--hydro);
 }
 
 .anemo-card {
   border: solid 2px var(--anemo);
+  box-shadow: 0 0 4px var(--anemo);
 }
 
 .electro-card {
   border: solid 2px var(--electro);
+  box-shadow: 0 0 4px var(--electro);
 }
 
 .dendro-card {
   border: solid 2px var(--dendro);
+  box-shadow: 0 0 4px var(--dendro);
 }
 
 .cryo-card {
   border: solid 2px var(--cryo);
+  box-shadow: 0 0 4px var(--cryo);
 }
 
 .geo-card {
   border: solid 2px var(--geo);
+  box-shadow: 0 0 4px var(--geo);
 }
