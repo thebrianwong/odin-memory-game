@@ -11,9 +11,39 @@ ul {
   padding: 0;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 2.5vw;
+}
+
+#root > * {
+  border: solid 2px rgba(245, 245, 245, 0.6);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 1px whitesmoke;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
 .game-ui {
   display: flex;
-  margin-bottom: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5vh;
+  padding: 5px 25px;
+}
+
+.game-ui h1,
+.game-ui p {
+  margin: 5px;
+}
+
+.scores-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .element-menu {
@@ -34,4 +64,17 @@ ul {
 
 .element-menu:hover .element-dropdown {
   display: block;
+}
+
+.game-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 15px;
+}
+
+.credits {
+  text-align: center;
+  margin: 0 0 2.5vh 0;
 }
