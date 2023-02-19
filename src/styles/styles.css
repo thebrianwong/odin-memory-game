@@ -60,6 +60,10 @@ button:hover {
   text-align: center;
 }
 
+.scores-display .elemental-text {
+  text-shadow: 0 1px black;
+}
+
 .element-menu {
   background-color: transparent;
   position: relative;
@@ -100,7 +104,6 @@ button:hover {
 
 .elemental-text {
   font-weight: 600;
-  text-shadow: 0 1px black;
 }
 
 .pyro-text {
