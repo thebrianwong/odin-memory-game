@@ -51,8 +51,8 @@ function App() {
   }, [currentElement]);
   return (
     <>
-      <div class="game-ui">
-        <div class="title-text">
+      <div className="game-ui">
+        <div className="title-text">
           <h1>
             Genshin Impact<br></br> Memory Game
           </h1>
