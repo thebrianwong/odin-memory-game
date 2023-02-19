@@ -44,7 +44,7 @@ function App() {
   useMemo(() => {
     checkForNewBestScore(currentElement);
   }, [currentScore]);
-  useEffect(() => {
+  useMemo(() => {
     resetPoints();
     resetPickedCharacters();
   }, [currentElement]);
