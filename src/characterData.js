@@ -173,4 +173,27 @@ export const characterData = {
       name: "Shenhe",
     },
   ],
+  geo: [
+    {
+      name: "Albedo",
+    },
+    {
+      name: "Arataki Itto",
+    },
+    {
+      name: "Gorou",
+    },
+    {
+      name: "Ningguang",
+    },
+    {
+      name: "Noelle",
+    },
+    {
+      name: "Yun Jin",
+    },
+    {
+      name: "Zhongli",
+    },
+  ],
 };
