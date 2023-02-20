@@ -16,7 +16,7 @@ export const characterData = {
         "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Icon_Emoji_Paimon%27s_Paintings_Diluc_1.png/",
     },
     {
-      name: "Hu Tao",
+      name: "Hu_Tao",
       image:
         "https://static.wikia.nocookie.net/gensin-impact/images/3/36/Icon_Emoji_065_Hu_Tao_Evil_laugh.png/",
     },
@@ -53,7 +53,7 @@ export const characterData = {
   ],
   electro: [
     {
-      name: "Yae Miko",
+      name: "Yae_Miko",
       image:
         "https://static.wikia.nocookie.net/gensin-impact/images/7/7d/Icon_Emoji_Paimon%27s_Paintings_Yae_Miko_1.png/",
     },
