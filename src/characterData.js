@@ -39,7 +39,7 @@ export const characterData = {
       name: "Candace",
     },
     {
-      name: "Kamisato Ayato",
+      name: "Childe",
     },
     {
       name: "Mona",
@@ -51,13 +51,42 @@ export const characterData = {
       name: "Sangonomiya Kokomi",
     },
     {
-      name: "Childe",
+      name: "Kamisato Ayato",
     },
     {
       name: "Xingqiu",
     },
     {
       name: "Yelan",
+    },
+  ],
+  anemo: [
+    {
+      name: "Faruzan",
+    },
+    {
+      name: "Jean",
+    },
+    {
+      name: "Kaedehara Kazuha",
+    },
+    {
+      name: "Sayu",
+    },
+    {
+      name: "Shikanoin Heizou",
+    },
+    {
+      name: "Sucrose",
+    },
+    {
+      name: "Venti",
+    },
+    {
+      name: "Wanderer",
+    },
+    {
+      name: "Xiao",
     },
   ],
   electro: [
