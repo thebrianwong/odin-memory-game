@@ -124,4 +124,21 @@ export const characterData = {
       name: "Yae Miko",
     },
   ],
+  dendro: [
+    {
+      name: "Alhaitham",
+    },
+    {
+      name: "Collei",
+    },
+    {
+      name: "Nahida",
+    },
+    {
+      name: "Tighnari",
+    },
+    {
+      name: "Yaoyao",
+    },
+  ],
 };
