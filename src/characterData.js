@@ -10,7 +10,7 @@ export const characterData = {
       name: "Diluc",
     },
     {
-      name: "Hu_Tao",
+      name: "Hu Tao",
     },
     {
       name: "Klee",
@@ -33,7 +33,7 @@ export const characterData = {
   ],
   electro: [
     {
-      name: "Yae_Miko",
+      name: "Yae Miko",
     },
   ],
 };
