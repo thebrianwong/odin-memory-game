@@ -91,6 +91,36 @@ export const characterData = {
   ],
   electro: [
     {
+      name: "Beidou",
+    },
+    {
+      name: "Cyno",
+    },
+    {
+      name: "Dori",
+    },
+    {
+      name: "Fischl",
+    },
+    {
+      name: "Keqing",
+    },
+    {
+      name: "Kujou Sara",
+    },
+    {
+      name: "Kuki Shinobu",
+    },
+    {
+      name: "Lisa",
+    },
+    {
+      name: "Raiden Shogun",
+    },
+    {
+      name: "Razor",
+    },
+    {
       name: "Yae Miko",
     },
   ],
