@@ -19,7 +19,6 @@ const CardsContainer = ({ element, characterData, resolveCardChoice }) => {
             key={character.name}
             characterName={character.name}
             characterElement={element}
-            characterImage={character.image}
             resolveCardChoice={resolveCardChoice}
           />
         );

@@ -1,7 +1,6 @@
 const CharacterCard = ({
   characterName,
   characterElement,
-  characterImage,
   resolveCardChoice,
 }) => {
   return (
@@ -9,7 +8,10 @@ const CharacterCard = ({
       className={`${characterElement}-card game-card`}
       onClick={() => resolveCardChoice(characterName, characterElement)}
     >
-      <img src={`${characterImage}`} alt={`${characterName} chibi sticker`} />
+      <img
+        src={require(`../assets/character_images/${characterElement}/${characterName}.png`)}
+        alt={`${characterName} chibi sticker`}
+      />
       <p className={`${characterElement}-text elemental-text`}>
         {characterName}
       </p>
