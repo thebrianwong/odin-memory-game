@@ -141,4 +141,36 @@ export const characterData = {
       name: "Yaoyao",
     },
   ],
+  cryo: [
+    {
+      name: "Chongyun",
+    },
+    {
+      name: "Diona",
+    },
+    {
+      name: "Eula",
+    },
+    {
+      name: "Ganyu",
+    },
+    {
+      name: "Kaeya",
+    },
+    {
+      name: "Kamisato Ayaka",
+    },
+    {
+      name: "Layla",
+    },
+    {
+      name: "Qiqi",
+    },
+    {
+      name: "Rosaria",
+    },
+    {
+      name: "Shenhe",
+    },
+  ],
 };
