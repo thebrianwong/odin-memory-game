@@ -95,6 +95,8 @@ button:hover {
 }
 
 .game-card {
+  border-style: solid;
+  border-width: 2px;
   border-radius: 8px;
   flex-basis: 24%;
 }
@@ -192,37 +194,37 @@ button:hover {
 }
 
 .pyro-card {
-  border: solid 2px var(--pyro);
+  border-color: var(--pyro);
   box-shadow: 0 0 var(--spread) var(--pyro);
 }
 
 .hydro-card {
-  border: solid 2px var(--hydro);
+  border-color: var(--hydro);
   box-shadow: 0 0 var(--spread) var(--hydro);
 }
 
 .anemo-card {
-  border: solid 2px var(--anemo);
+  border-color: var(--anemo);
   box-shadow: 0 0 var(--spread) var(--anemo);
 }
 
 .electro-card {
-  border: solid 2px var(--electro);
+  border-color: var(--electro);
   box-shadow: 0 0 var(--spread) var(--electro);
 }
 
 .dendro-card {
-  border: solid 2px var(--dendro);
+  border-color: var(--dendro);
   box-shadow: 0 0 var(--spread) var(--dendro);
 }
 
 .cryo-card {
-  border: solid 2px var(--cryo);
+  border-color: var(--cryo);
   box-shadow: 0 0 var(--spread) var(--cryo);
 }
 
 .geo-card {
-  border: solid 2px var(--geo);
+  border-color: var(--geo);
   box-shadow: 0 0 var(--spread) var(--geo);
 }
 
