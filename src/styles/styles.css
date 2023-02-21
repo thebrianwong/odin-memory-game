@@ -99,7 +99,6 @@ button:hover {
 }
 
 .game-card:hover {
-  background-color: lightgray;
   transform: scale(1.05);
 }
 
