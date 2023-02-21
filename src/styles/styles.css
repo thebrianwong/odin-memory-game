@@ -245,29 +245,29 @@ button:hover {
 }
 
 .scores-display .pyro-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/);
+  background-image: url("../assets/elemental_symbols/pyro.svg");
 }
 
 .scores-display .hydro-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/);
+  background-image: url("../assets/elemental_symbols/hydro.svg");
 }
 
 .scores-display .anemo-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/);
+  background-image: url("../assets/elemental_symbols/anemo.svg");
 }
 
 .scores-display .electro-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/);
+  background-image: url("../assets/elemental_symbols/electro.svg");
 }
 
 .scores-display .dendro-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/);
+  background-image: url("../assets/elemental_symbols/dendro.svg");
 }
 
 .scores-display .cryo-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/);
+  background-image: url("../assets/elemental_symbols/cryo.svg");
 }
 
 .scores-display .geo-text::before {
-  background-image: url(https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/);
+  background-image: url("../assets/elemental_symbols/geo.svg");
 }
