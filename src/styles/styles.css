@@ -1,4 +1,10 @@
+@font-face {
+  font-family: "Genshin Impact";
+  src: local("gi"), url("../assets/fonts/gi.ttf") format("truetype");
+}
+
 :root {
+  font-family: "Genshin Impact";
   --pyro: #ef7939;
   --hydro: #4cc2f0;
   --anemo: #74c2a8;
