@@ -55,6 +55,15 @@ button:hover {
   padding: 5px 25px;
 }
 
+.game-ui > div:first-child,
+.game-ui > div:nth-child(2) {
+  width: calc(100% / 3);
+}
+
+.game-ui > div:last-child {
+  margin-left: auto;
+}
+
 .game-ui h1,
 .game-ui p {
   margin: 5px;
@@ -74,7 +83,7 @@ button:hover {
 .element-menu {
   background-color: transparent;
   position: relative;
-  width: 150px;
+  width: 10%;
 }
 
 .element-menu button {
