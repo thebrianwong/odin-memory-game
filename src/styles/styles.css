@@ -79,6 +79,7 @@ button:hover {
 
 .element-menu button {
   width: 100%;
+  padding: 3px 6px;
 }
 
 .element-dropdown {
