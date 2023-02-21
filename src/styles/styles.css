@@ -95,16 +95,17 @@ button:hover {
 
 .game-card {
   border-radius: 8px;
+  flex-basis: 24%;
 }
 
 .game-card:hover {
   background-color: lightgray;
-  transform: scale(1.10);
+  transform: scale(1.05);
 }
 
 .game-card img {
   margin-top: 15px;
-  width: 181px;
+  width: 200px;
 }
 
 .credits {
