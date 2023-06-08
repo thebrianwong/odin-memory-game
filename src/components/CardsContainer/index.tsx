@@ -1,7 +1,14 @@
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "../CharacterCard";
+import CardsContainerProps from "./types";
 
-const CardsContainer = ({ element, characterData, resolveCardChoice }) => {
-  const randomizeCardOrder = (characterData) => {
+const CardsContainer = ({
+  element,
+  characterData,
+  resolveCardChoice,
+}: CardsContainerProps) => {
+  const randomizeCardOrder = (
+    characterData: Array<{ name: string }>
+  ): Array<{ name: string }> => {
     const randomOrderData = [...characterData];
     for (let i = randomOrderData.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * i);
