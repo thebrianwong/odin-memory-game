@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import ElementDropdownMenu from "./components/ElementDropdownMenu";
 import ScoresDisplay from "./components/ScoresDisplay";
-import CardsContainer from "./components/CardsContainer/index.tsx";
+import CardsContainer from "./components/CardsContainer/index";
 import { characterData } from "./characterData";
 import "./assets/fonts/gi.ttf";
 import "./styles/normalize.css";
