@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import ElementDropdownMenu from "./components/ElementDropdownMenu";
+import ElementDropdownMenu from "./components/ElementDropdownMenu/index";
 import ScoresDisplay from "./components/ScoresDisplay/index";
 import CardsContainer from "./components/CardsContainer/index";
 import { characterData } from "./characterData";
