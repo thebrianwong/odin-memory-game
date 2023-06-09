@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import ElementDropdownMenu from "./components/ElementDropdownMenu";
-import ScoresDisplay from "./components/ScoresDisplay";
+import ScoresDisplay from "./components/ScoresDisplay/index";
 import CardsContainer from "./components/CardsContainer/index";
 import { characterData } from "./characterData";
 import "./assets/fonts/gi.ttf";
