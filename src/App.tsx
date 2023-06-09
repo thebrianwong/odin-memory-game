@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ElementDropdownMenu from "./components/ElementDropdownMenu/index";
 import ScoresDisplay from "./components/ScoresDisplay/index";
 import CardsContainer from "./components/CardsContainer/index";
-import { characterData } from "./characterData";
+import characterData from "./characterData.json";
 import Element from "./element.enum";
 import "./assets/fonts/gi.ttf";
 import "./styles/normalize.css";
