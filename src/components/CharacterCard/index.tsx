@@ -1,15 +1,17 @@
+import CharacterCardProps from "./types";
+
 const CharacterCard = ({
   characterName,
   characterElement,
   resolveCardChoice,
-}) => {
+}: CharacterCardProps) => {
   return (
     <button
       className={`${characterElement}-card game-card`}
       onClick={() => resolveCardChoice(characterName, characterElement)}
     >
       <img
-        src={require(`../assets/character_images/${characterElement}/${characterName}.png`)}
+        src={require(`../../assets/character_images/${characterElement}/${characterName}.png`)}
         alt={`${characterName} chibi sticker`}
       />
       <p className={`${characterElement}-text elemental-text`}>

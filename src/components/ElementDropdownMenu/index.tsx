@@ -1,8 +1,10 @@
 import { memo } from "react";
+import ElementDropdownMenuProps from "./types";
+import Element from "../../element.enum";
 
 const ElementDropdownMenu = memo(function ElementDropdownMenu({
   changeElement,
-}) {
+}: ElementDropdownMenuProps) {
   return (
     <div className="element-menu">
       <button className="placeholder-button elemental-button">Element</button>
@@ -10,7 +12,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="pyro-background elemental-button"
-            onClick={() => changeElement("pyro")}
+            onClick={() => changeElement(Element.PYRO)}
           >
             Pyro
           </button>
@@ -18,7 +20,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="hydro-background elemental-button"
-            onClick={() => changeElement("hydro")}
+            onClick={() => changeElement(Element.HYDRO)}
           >
             Hydro
           </button>
@@ -26,7 +28,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="anemo-background elemental-button"
-            onClick={() => changeElement("anemo")}
+            onClick={() => changeElement(Element.ANEMO)}
           >
             Anemo
           </button>
@@ -34,7 +36,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="electro-background elemental-button"
-            onClick={() => changeElement("electro")}
+            onClick={() => changeElement(Element.ELECTRO)}
           >
             Electro
           </button>
@@ -42,7 +44,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="dendro-background elemental-button"
-            onClick={() => changeElement("dendro")}
+            onClick={() => changeElement(Element.DENDRO)}
           >
             Dendro
           </button>
@@ -50,7 +52,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="cryo-background elemental-button"
-            onClick={() => changeElement("cryo")}
+            onClick={() => changeElement(Element.CRYO)}
           >
             Cryo
           </button>
@@ -58,7 +60,7 @@ const ElementDropdownMenu = memo(function ElementDropdownMenu({
         <li className="menu-option">
           <button
             className="geo-background elemental-button"
-            onClick={() => changeElement("geo")}
+            onClick={() => changeElement(Element.GEO)}
           >
             Geo
           </button>

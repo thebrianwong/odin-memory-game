@@ -1,4 +1,10 @@
-const ScoresDisplay = ({ currentScore, bestScore, element }) => {
+import ScoresDisplayProps from "./types";
+
+const ScoresDisplay = ({
+  currentScore,
+  bestScore,
+  element,
+}: ScoresDisplayProps) => {
   const elementLabel = element.charAt(0).toUpperCase() + element.slice(1);
   return (
     <div className="scores-display">

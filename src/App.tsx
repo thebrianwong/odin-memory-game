@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
-import ElementDropdownMenu from "./components/ElementDropdownMenu";
-import ScoresDisplay from "./components/ScoresDisplay";
-import CardsContainer from "./components/CardsContainer";
-import { characterData } from "./characterData";
+import { useEffect, useState } from "react";
+import ElementDropdownMenu from "./components/ElementDropdownMenu/index";
+import ScoresDisplay from "./components/ScoresDisplay/index";
+import CardsContainer from "./components/CardsContainer/index";
+import characterData from "./characterData.json";
+import Element from "./element.enum";
 import "./assets/fonts/gi.ttf";
 import "./styles/normalize.css";
 import "./styles/styles.css";
@@ -18,23 +19,28 @@ function App() {
     cryo: 0,
     geo: 0,
   });
-  const [currentElement, setCurrentElement] = useState("pyro");
-  const [previouslyPicked, setPreviouslyPicked] = useState([]);
+  const [currentElement, setCurrentElement] = useState(Element.PYRO);
+  const [previouslyPicked, setPreviouslyPicked] = useState(Array<string>);
+
   const gainPoint = () => {
     setCurrentScore(currentScore + 1);
   };
+
   const resetPoints = () => {
     setCurrentScore(0);
   };
+
   const resetPickedCharacters = () => {
     setPreviouslyPicked([]);
   };
-  const checkForNewBestScore = (element) => {
+
+  const checkForNewBestScore = (element: Element) => {
     if (currentScore > bestScores[element]) {
       setBestScores({ ...bestScores, [element]: currentScore });
     }
   };
-  const resolveCardChoice = (characterName, element) => {
+
+  const resolveCardChoice = (characterName: string) => {
     if (!previouslyPicked.includes(characterName)) {
       gainPoint();
       setPreviouslyPicked(previouslyPicked.concat(characterName));
@@ -43,13 +49,16 @@ function App() {
       resetPickedCharacters();
     }
   };
-  useMemo(() => {
+
+  useEffect(() => {
     checkForNewBestScore(currentElement);
   }, [currentScore]);
-  useMemo(() => {
+
+  useEffect(() => {
     resetPoints();
     resetPickedCharacters();
   }, [currentElement]);
+
   return (
     <>
       <div className="game-ui">
