@@ -1,0 +1,51 @@
+@media (max-width: 549px) {
+  #root {
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .game-ui {
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 15px;
+  }
+
+  .title-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .scores-display {
+    width: 100%;
+  }
+
+  .element-menu {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .game-contents {
+    padding: 10px 10px;
+    gap: 20px 10px;
+  }
+
+  .game-card img {
+    width: 165px;
+  }
+}
+
+@media (max-width: 375px) {
+  .game-card img {
+    width: 145px;
+  }
+}
+
+@media (max-width: 320px) {
+  .game-card img {
+    width: 115px;
+  }
+}
