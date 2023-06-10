@@ -5,4 +5,12 @@ $electro: #af8fc1;
 $dendro: #a5c83a;
 $cryo: #a0d5e7;
 $geo: #fab631;
-$spread: 4px;
+$elements: (
+  "pyro": $pyro,
+  "hydro": $hydro,
+  "anemo": $anemo,
+  "electro": $electro,
+  "dendro": $dendro,
+  "cryo": $cryo,
+  "geo": $geo,
+);
