@@ -1,3 +1,4 @@
+@use "./variables" as *;
 @use "./mixins" as *;
 
 @font-face {
@@ -41,4 +42,14 @@ button:hover {
 .credits {
   text-align: center;
   margin: 0 0 2.5vh 0;
+}
+
+.elemental-text {
+  font-weight: 600;
+}
+
+@each $element-name, $element-variable in $elements {
+  .#{$element-name}-text {
+    color: $element-variable;
+  }
 }
