@@ -1,0 +1,29 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.game-contents {
+  @include flex(space-evenly, normal, 30px, wrap);
+  padding: 35px;
+
+  .game-card {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    flex-basis: 23%;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      margin-top: 15px;
+      width: 200px;
+    }
+  }
+
+  @each $element-name, $element-variable in $elements {
+    .#{$element-name}-card {
+      @include card-glow($element-variable);
+    }
+  }
+}

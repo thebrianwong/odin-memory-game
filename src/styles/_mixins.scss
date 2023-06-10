@@ -1,0 +1,16 @@
+@mixin flex($justify, $align, $gap, $flow: row) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin card-glow($element) {
+  border-color: $element;
+  box-shadow: 0 0 4px $element;
+
+  &:hover {
+    box-shadow: 0 0 20px $element;
+  }
+}

@@ -1,0 +1,51 @@
+@use "./variables" as *;
+
+.element-menu {
+  background-color: transparent;
+  position: relative;
+  width: 10%;
+  min-width: 85px;
+  margin-left: auto;
+
+  button {
+    width: 100%;
+    padding: 3px 6px;
+  }
+
+  &:hover {
+    .element-dropdown {
+      display: block;
+    }
+  }
+
+  .element-dropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 1px 3px 6px 0px black;
+    width: 100%;
+
+    @each $element-name, $element-variable in $elements {
+      .#{$element-name}-background {
+        background-color: $element-variable;
+      }
+    }
+  }
+
+  .placeholder-button {
+    color: black !important;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.elemental-button {
+  color: white;
+  border: solid 1px black;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: 0px 0px 5px 0px black inset;
+  }
+}
