@@ -1,0 +1,62 @@
+@use "./mixins" as *;
+
+.game-ui {
+  @include flex(space-between, center, 0);
+  margin-top: 2.5vh;
+  padding: 5px 25px;
+
+  h1,
+  p {
+    margin: 5px;
+  }
+
+  .title-text,
+  .scores-display {
+    width: calc(100% / 3);
+  }
+
+  .scores-display {
+    @include flex(normal, center, 0, column);
+    text-align: center;
+
+    .elemental-text {
+      text-shadow: 0 1px black;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        background-size: 50px 50px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .pyro-text::before {
+      background-image: url("../assets/elemental_symbols/pyro.svg");
+    }
+
+    .hydro-text::before {
+      background-image: url("../assets/elemental_symbols/hydro.svg");
+    }
+
+    .anemo-text::before {
+      background-image: url("../assets/elemental_symbols/anemo.svg");
+    }
+
+    .electro-text::before {
+      background-image: url("../assets/elemental_symbols/electro.svg");
+    }
+
+    .dendro-text::before {
+      background-image: url("../assets/elemental_symbols/dendro.svg");
+    }
+
+    .cryo-text::before {
+      background-image: url("../assets/elemental_symbols/cryo.svg");
+    }
+
+    .geo-text::before {
+      background-image: url("../assets/elemental_symbols/geo.svg");
+    }
+  }
+}
