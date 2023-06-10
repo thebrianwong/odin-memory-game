@@ -1,3 +1,4 @@
+@use "./variables" as *;
 @use "./mixins" as *;
 
 .game-ui {
@@ -31,32 +32,10 @@
       }
     }
 
-    .pyro-text::before {
-      background-image: url("../assets/elemental_symbols/pyro.svg");
-    }
-
-    .hydro-text::before {
-      background-image: url("../assets/elemental_symbols/hydro.svg");
-    }
-
-    .anemo-text::before {
-      background-image: url("../assets/elemental_symbols/anemo.svg");
-    }
-
-    .electro-text::before {
-      background-image: url("../assets/elemental_symbols/electro.svg");
-    }
-
-    .dendro-text::before {
-      background-image: url("../assets/elemental_symbols/dendro.svg");
-    }
-
-    .cryo-text::before {
-      background-image: url("../assets/elemental_symbols/cryo.svg");
-    }
-
-    .geo-text::before {
-      background-image: url("../assets/elemental_symbols/geo.svg");
+    @each $element, $_ in $elements {
+      .#{$element}-text::before {
+        background-image: url("../assets/elemental_symbols/#{$element}.svg");
+      }
     }
   }
 }
