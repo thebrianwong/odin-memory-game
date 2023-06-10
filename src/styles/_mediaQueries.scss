@@ -15,11 +15,13 @@
 
   .title-text {
     text-align: center;
-    width: 100%;
   }
 
-  .scores-display {
-    width: 100%;
+  .game-ui {
+    .title-text,
+    .scores-display {
+      width: 100%;
+    }
   }
 
   .element-menu {
@@ -31,21 +33,20 @@
   .game-contents {
     padding: 10px 10px;
     gap: 20px 10px;
-  }
-
-  .game-card img {
-    width: 165px;
+    .game-card img {
+      width: 165px;
+    }
   }
 }
 
 @media (max-width: 375px) {
-  .game-card img {
+  .game-contents .game-card img {
     width: 145px;
   }
 }
 
 @media (max-width: 320px) {
-  .game-card img {
+  .game-contents .game-card img {
     width: 115px;
   }
 }
