@@ -4,9 +4,7 @@ import ScoresDisplay from "./components/ScoresDisplay/index";
 import CardsContainer from "./components/CardsContainer/index";
 import characterData from "./characterData.json";
 import Element from "./element.enum";
-import "./assets/fonts/gi.ttf";
-import "./styles/normalize.css";
-import "./styles/styles.css";
+import "./styles/styles.scss";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
