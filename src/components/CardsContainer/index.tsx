@@ -19,7 +19,7 @@ const CardsContainer = ({
     return randomOrderData;
   };
   return (
-    <div className="game-contents">
+    <main className="game-contents">
       {randomizeCardOrder(characterData).map((character) => {
         return (
           <CharacterCard
@@ -30,7 +30,7 @@ const CardsContainer = ({
           />
         );
       })}
-    </div>
+    </main>
   );
 };
 

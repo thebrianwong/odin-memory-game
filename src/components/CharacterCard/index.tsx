@@ -12,7 +12,7 @@ const CharacterCard = ({
     >
       <img
         src={require(`../../assets/character_images/${characterElement}/${characterName}.png`)}
-        alt={`${characterName} chibi sticker`}
+        alt=""
       />
       <p className={`${characterElement}-text elemental-text`}>
         {characterName}

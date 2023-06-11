@@ -17,14 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired start && npm run sass-dev",
+    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "sass-dev": "sass --watch ./src/styles/styles.scss ./src/styles/style.css",
-    "sass-prod": "sass ./src/styles/styles.scss ./src/styles/style.css"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,8 +44,7 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
-    "react-app-rewired": "^2.2.1",
-    "sass": "^1.63.3"
+    "react-app-rewired": "^2.2.1"
   },
   "homepage": "http://thebrianwong.github.io/odin-memory-game"
 }

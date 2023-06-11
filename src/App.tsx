@@ -50,7 +50,7 @@ function App() {
 
   useEffect(() => {
     checkForNewBestScore(currentElement);
-  }, [currentScore]);
+  });
 
   useEffect(() => {
     resetPoints();
@@ -59,7 +59,7 @@ function App() {
 
   return (
     <>
-      <div className="game-ui">
+      <nav className="game-ui">
         <div className="title-text">
           <h1>
             Genshin Impact<br></br> Memory Game
@@ -72,15 +72,15 @@ function App() {
           element={currentElement}
         />
         <ElementDropdownMenu changeElement={setCurrentElement} />
-      </div>
+      </nav>
       <CardsContainer
         element={currentElement}
         characterData={characterData[currentElement]}
         resolveCardChoice={resolveCardChoice}
       />
-      <div className="credits">
+      <footer className="credits">
         <p>All assets by HoYoverse</p>
-      </div>
+      </footer>
     </>
   );
 }
