@@ -50,7 +50,7 @@ function App() {
 
   useEffect(() => {
     checkForNewBestScore(currentElement);
-  }, [currentScore]);
+  });
 
   useEffect(() => {
     resetPoints();
