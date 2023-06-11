@@ -13,14 +13,7 @@
     padding: 3px 6px;
   }
 
-  &:hover {
-    .element-dropdown {
-      display: block;
-    }
-  }
-
   .element-dropdown {
-    display: none;
     position: absolute;
     box-shadow: 1px 3px 6px 0px black;
     width: 100%;
