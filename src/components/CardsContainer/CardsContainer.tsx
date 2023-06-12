@@ -1,4 +1,4 @@
-import CharacterCard from "../CharacterCard/index";
+import CharacterCard from "../CharacterCard/CharacterCard";
 import CardsContainerProps from "./types";
 
 const CardsContainer = ({

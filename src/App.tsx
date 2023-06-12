@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import ElementDropdownMenu from "./components/ElementDropdownMenu/index";
-import ScoresDisplay from "./components/ScoresDisplay/index";
-import CardsContainer from "./components/CardsContainer/index";
+import ElementDropdownMenu from "./components/ElementDropdownMenu/ElementDropdownMenu";
+import ScoresDisplay from "./components/ScoresDisplay/ScoresDisplay";
+import CardsContainer from "./components/CardsContainer/CardsContainer";
 import characterData from "./characterData.json";
 import Element from "./element.enum";
 import "./styles/styles.scss";
