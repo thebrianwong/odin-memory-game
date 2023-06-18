@@ -18,7 +18,7 @@ function App() {
     geo: 0,
   });
   const [currentElement, setCurrentElement] = useState(Element.PYRO);
-  const [previouslyPicked, setPreviouslyPicked] = useState(Array<string>);
+  const [previouslyPicked, setPreviouslyPicked] = useState<Array<string>>([]);
 
   const gainPoint = () => {
     setCurrentScore(currentScore + 1);
