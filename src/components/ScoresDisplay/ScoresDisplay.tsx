@@ -1,11 +1,12 @@
-import ScoresDisplayProps from "./types";
+import { ScoresDisplayProps, ElementLabel } from "./types";
 
 const ScoresDisplay = ({
   currentScore,
   bestScore,
   element,
 }: ScoresDisplayProps) => {
-  const elementLabel = element.charAt(0).toUpperCase() + element.slice(1);
+  const elementLabel = (element.charAt(0).toUpperCase() +
+    element.slice(1)) as ElementLabel;
   return (
     <div className="scores-display">
       <p>

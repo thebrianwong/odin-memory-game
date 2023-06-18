@@ -6,4 +6,13 @@ type ScoresDisplayProps = {
   element: Element;
 };
 
-export default ScoresDisplayProps;
+type ElementLabel =
+  | "Pyro"
+  | "Hydro"
+  | "Anemo"
+  | "Electro"
+  | "Dendro"
+  | "Cryo"
+  | "Geo";
+
+export { ScoresDisplayProps, ElementLabel };
